@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAM dan Demokrasi dalam Islam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f5f7fa;
+      }
+
+      .slide {
+        background-color: white;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        transition: all 0.5s ease;
+      }
+
+      .current-slide {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .slide-title {
+        background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .islamic-pattern {
+        background-image: url("alquran.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .fade-in {
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .bullet-animation {
+        animation: bulletAppear 0.5s ease-in-out forwards;
+      }
+
+      @keyframes bulletAppear {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body class="py-10 px-4 max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-10 text-gray-800">
+      HAM dan Demokrasi dalam Islam
+    </h1>
+
+    <!-- Slides Container -->
+    <div class="slides-container relative overflow-hidden h-[600px]">
+      <!-- Slide 1: Cover Slide -->
+      <div class="slide p-8 absolute w-full h-full current-slide" id="slide1">
+        <div
+          class="bg-white rounded-xl h-full flex flex-col items-center justify-center p-10 text-center"
+        >
+          <div class="islamic-pattern w-40 h-40 rounded-full mb-6"></div>
+          <h1 class="slide-title text-5xl font-bold mb-4">
+            HAM dan Demokrasi dalam Islam
+          </h1>
+          <p class="text-xl text-gray-600">
+            Pandangan Islam berdasarkan Al-Qur'an, Hadis, dan Pemikiran Ulama
+          </p>
+          <div class="mt-8 text-sm text-gray-500">
+            <p>
+              Presentasi Disusun untuk Memenuhi Tugas Mata Kuliah Pendidikan
+              Agama Islam
+            </p>
+            <p class="mt-2 text-blue-600 font-medium">Kelompok 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Pengantar -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide2">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">Pengantar</h2>
+          <div class="flex-1 grid grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <div
+                class="bg-blue-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <h3 class="font-semibold text-blue-800 mb-2">Konsep Dasar</h3>
+                <p class="text-gray-700">
+                  HAM dan demokrasi adalah dua konsep utama dalam peradaban
+                  modern yang juga memiliki akar kuat dalam ajaran Islam.
+                </p>
+              </div>
+              <div
+                class="bg-blue-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <h3 class="font-semibold text-blue-800 mb-2">
+                  Pendekatan Islam
+                </h3>
+                <p class="text-gray-700">
+                  Islam memandang HAM dan demokrasi dengan pendekatan yang
+                  menyelaraskan antara nilai-nilai universal dengan
+                  prinsip-prinsip syariat.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="demokrasi.jpeg"
+                alt="Buku terbuka dengan simbol Islam dan demokrasi disandingkan"
+                class="rounded-lg shadow-md fade-in"
+                style="animation-delay: 0.6s"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Konsep HAM dalam Islam -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide3">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Konsep HAM dalam Islam
+          </h2>
+          <div class="flex-1 grid grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <div
+                class="bg-emerald-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <h3 class="font-semibold text-emerald-800 mb-2">
+                  Landasan Al-Qur'an
+                </h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Q.S. Al-Isra': 70 - Martabat manusia yang mulia</li>
+                  <li>Q.S. Al-Hujurat: 13 - Persamaan derajat</li>
+                  <li>Q.S. Al-Baqarah: 256 - Kebebasan beragama</li>
+                </ul>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-emerald-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <h3 class="font-semibold text-emerald-800 mb-2">
+                  Landasan Hadis
+                </h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>
+                    Hadis tentang perlindungan nyawa, harta, dan kehormatan
+                  </li>
+                  <li>Khotbah Wada' Nabi yang menekankan hak asasi</li>
+                </ul>
+              </div>
+              <div
+                class="bg-emerald-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.6s"
+              >
+                <h3 class="font-semibold text-emerald-800 mb-2">
+                  Pemikiran Ulama
+                </h3>
+                <p class="text-gray-700">
+                  Konsep Maqasid al-Syariah (Al-Ghazali, Asy-Syatibi)
+                  melindungi: agama, jiwa, akal, keturunan, dan harta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Perbandingan HAM Universal vs Islam -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide4">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Perbandingan HAM Universal vs Islam
+          </h2>
+          <div class="flex-1">
+            <div class="overflow-x-auto">
+              <table
+                class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <thead class="bg-blue-600 text-white">
+                  <tr>
+                    <th class="py-3 px-4 text-left">Aspek</th>
+                    <th class="py-3 px-4 text-left">HAM Universal</th>
+                    <th class="py-3 px-4 text-left">HAM Islam</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr
+                    class="hover:bg-gray-50 bullet-animation"
+                    style="animation-delay: 0.2s"
+                  >
+                    <td class="py-3 px-4 font-medium">Sumber HAM</td>
+                    <td class="py-3 px-4">Kesepakatan manusia</td>
+                    <td class="py-3 px-4">Wahyu Allah</td>
+                  </tr>
+                  <tr
+                    class="hover:bg-gray-50 bullet-animation"
+                    style="animation-delay: 0.4s"
+                  >
+                    <td class="py-3 px-4 font-medium">Hak Beragama</td>
+                    <td class="py-3 px-4">Kebebasan mutlak</td>
+                    <td class="py-3 px-4">Bebas dengan batasan syariat</td>
+                  </tr>
+                  <tr
+                    class="hover:bg-gray-50 bullet-animation"
+                    style="animation-delay: 0.6s"
+                  >
+                    <td class="py-3 px-4 font-medium">
+                      Hak Individu vs Masyarakat
+                    </td>
+                    <td class="py-3 px-4">Lebih individualistik</td>
+                    <td class="py-3 px-4">
+                      Keseimbangan individu dan masyarakat
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200 bullet-animation"
+              style="animation-delay: 0.8s"
+            >
+              <p class="text-yellow-800">
+                <span class="font-semibold">Intisari:</span> HAM dalam Islam
+                memiliki kesamaan dengan HAM universal dalam prinsip dasar namun
+                berbeda dalam sumber, filosofi, dan implementasi dengan tetap
+                berpegang pada nilai-nilai syariat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Demokrasi dalam Perspektif Islam -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide5">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Demokrasi dalam Perspektif Islam
+          </h2>
+          <div class="flex-1 grid grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div
+                class="bg-purple-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <h3 class="font-semibold text-purple-800 mb-2">
+                  Konsep Syura (Musyawarah)
+                </h3>
+                <p class="text-gray-700">
+                  Q.S. Asy-Syura: 38 - "Dan urusan mereka diputuskan dengan
+                  musyawarah antara mereka."
+                </p>
+              </div>
+              <div
+                class="bg-purple-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <h3 class="font-semibold text-purple-800 mb-2">Keadilan</h3>
+                <p class="text-gray-700">
+                  Q.S. An-Nisa': 58 - "Sesungguhnya Allah menyuruh kamu
+                  menyampaikan amanat kepada yang berhak menerimanya, dan
+                  apabila menetapkan hukum di antara manusia supaya kamu
+                  menetapkan dengan adil."
+                </p>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div
+                class="bg-purple-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.6s"
+              >
+                <h3 class="font-semibold text-purple-800 mb-2">
+                  Pemikiran Ulama Kontemporer
+                </h3>
+                <p class="text-gray-700">
+                  Ulama seperti Yusuf Al-Qaradawi dan Mohammad Hashim Kamali
+                  memandang sistem demokrasi yang sesuai syariat sebagai wasilah
+                  untuk mencapai keadilan dan kemaslahatan.
+                </p>
+              </div>
+              <div
+                class="bg-purple-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.8s"
+              >
+                <h3 class="font-semibold text-purple-800 mb-2">
+                  Batasan Demokrasi
+                </h3>
+                <p class="text-gray-700">
+                  Dalam Islam, demokrasi tidak boleh bertentangan dengan
+                  hukum-hukum yang sudah pasti (qath'i) dalam syariat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Prinsip Demokrasi yang Selaras dengan Islam -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide6">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Prinsip Demokrasi yang Selaras dengan Islam
+          </h2>
+          <div class="flex-1">
+            <div class="grid grid-cols-3 gap-6">
+              <div
+                class="bg-cyan-50 p-6 rounded-lg flex flex-col items-center text-center bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <div
+                  class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-cyan-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                    />
+                  </svg>
+                </div>
+                <h3 class="font-semibold text-cyan-800 mb-2">Musyawarah</h3>
+                <p class="text-gray-700 text-sm">
+                  Proses pengambilan keputusan melalui konsultasi dan diskusi
+                  yang baik.
+                </p>
+              </div>
+              <div
+                class="bg-cyan-50 p-6 rounded-lg flex flex-col items-center text-center bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <div
+                  class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-cyan-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                    />
+                  </svg>
+                </div>
+                <h3 class="font-semibold text-cyan-800 mb-2">Keadilan</h3>
+                <p class="text-gray-700 text-sm">
+                  Perlakuan yang sama di depan hukum tanpa diskriminasi.
+                </p>
+              </div>
+              <div
+                class="bg-cyan-50 p-6 rounded-lg flex flex-col items-center text-center bullet-animation"
+                style="animation-delay: 0.6s"
+              >
+                <div
+                  class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-cyan-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="font-semibold text-cyan-800 mb-2">Persamaan Hak</h3>
+                <p class="text-gray-700 text-sm">
+                  Semua manusia sama di hadapan Allah, membedakan hanya
+                  ketakwaannya.
+                </p>
+              </div>
+            </div>
+            <div
+              class="mt-8 p-6 bg-blue-50 rounded-lg bullet-animation"
+              style="animation-delay: 0.8s"
+            >
+              <h3 class="font-semibold text-blue-800 mb-2">Contoh Praktis</h3>
+              <p class="text-gray-700">
+                Sistem syura pada masa Khulafaur Rasyidin yang menggabungkan
+                elemen demokrasi dengan prinsip Islam dalam pengambilan
+                keputusan penting negara.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7: Isu Pelanggaran HAM di Negara Muslim -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide7">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Isu Pelanggaran HAM di Negara Muslim
+          </h2>
+          <div class="flex-1 grid grid-cols-2 gap-8">
+            <div>
+              <div
+                class="bg-rose-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <h3 class="font-semibold text-rose-800 mb-2">
+                  Kasus-Kasus Penting
+                </h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Diskriminasi terhadap minoritas agama</li>
+                  <li>Pembatasan kebebasan berekspresi</li>
+                  <li>Ketidakadilan gender dalam hukum tertentu</li>
+                  <li>Penyalahgunaan kekuasaan oleh penguasa</li>
+                </ul>
+              </div>
+              <div
+                class="mt-6 bg-rose-50 p-6 rounded-lg bullet-animation"
+                style="animation-delay: 0.6s"
+              >
+                <h3 class="font-semibold text-rose-800 mb-2">Penyebab</h3>
+                <p class="text-gray-700">
+                  Faktor politik, interpretasi sempit terhadap syariat, dan
+                  pengaruh budaya lokal yang bertentangan dengan prinsip Islam
+                  universal.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div
+                class="bg-rose-50 p-6 rounded-lg flex-1 bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <h3 class="font-semibold text-rose-800 mb-2">Solusi Islami</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>
+                    Reinterpretasi fiqh kontemporer yang lebih sesuai dengan ruh
+                    maqasid syariah
+                  </li>
+                  <li>Pendidikan HAM berbasis nilai-nilai Islam</li>
+                  <li>Pemberdayaan institusi pengawasan independen</li>
+                  <li>
+                    Penguatan masyarakat sipil sesuai konsep amar ma'ruf nahi
+                    munkar
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 8: Praktik Demokrasi di Negara Muslim -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide8">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Praktik Demokrasi di Negara Muslim
+          </h2>
+          <div class="flex-1">
+            <div class="grid grid-cols-3 gap-6 mb-8">
+              <div
+                class="bg-amber-50 p-4 rounded-lg bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <h3 class="font-semibold text-amber-800 mb-2">
+                  Model Indonesia
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  Demokrasi dengan prinsip Pancasila yang memadukan nilai-nilai
+                  Islam dan lokal.
+                </p>
+              </div>
+              <div
+                class="bg-amber-50 p-4 rounded-lg bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <h3 class="font-semibold text-amber-800 mb-2">Model Turki</h3>
+                <p class="text-gray-700 text-sm">
+                  Sekulerisme yang memungkinkan partai Islam berkuasa secara
+                  demokratis.
+                </p>
+              </div>
+              <div
+                class="bg-amber-50 p-4 rounded-lg bullet-animation"
+                style="animation-delay: 0.6s"
+              >
+                <h3 class="font-semibold text-amber-800 mb-2">
+                  Model Negara Teluk
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  Monarki dengan unsur syura terbatas dalam pengambilan
+                  keputusan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-indigo-50 p-6 rounded-lg bullet-animation"
+              style="animation-delay: 0.8s"
+            >
+              <h3 class="font-semibold text-indigo-800 mb-2">Tantangan</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <p class="text-gray-700">
+                    • Intervensi militer dalam politik
+                  </p>
+                  <p class="text-gray-700">• Hegemoni kelompok tertentu</p>
+                </div>
+                <div>
+                  <p class="text-gray-700">• Pemilu yang tidak adil</p>
+                  <p class="text-gray-700">
+                    • Pembatasan partisipasi perempuan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 9: Nilai HAM dan Demokrasi dalam Kehidupan -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide9">
+        <div class="h-full flex flex-col">
+          <h2 class="slide-title text-3xl font-bold mb-6 fade-in">
+            Nilai HAM dan Demokrasi dalam Kehidupan
+          </h2>
+          <div class="flex-1">
+            <div class="grid grid-cols-3 gap-6 h-3/4">
+              <div
+                class="bg-green-50 rounded-lg p-6 flex flex-col bullet-animation"
+                style="animation-delay: 0.2s"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-green-600"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-1a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v1h-3zM4.75 12.094A5.973 5.973 0 004 15v1H1v-1a3 3 0 013.75-2.906z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-green-800">Sosial</h3>
+                </div>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Menghargai hak setiap individu</li>
+                  <li>Toleransi dalam perbedaan</li>
+                  <li>Menjunjung tinggi keadilan sosial</li>
+                </ul>
+              </div>
+              <div
+                class="bg-green-50 rounded-lg p-6 flex flex-col bullet-animation"
+                style="animation-delay: 0.4s"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-green-600"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-green-800">Politik</h3>
+                </div>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Amanah dalam kepemimpinan</li>
+                  <li>Akuntabilitas penguasa</li>
+                  <li>Partisipasi publik dalam pengambilan keputusan</li>
+                </ul>
+              </div>
+              <div
+                class="bg-green-50 rounded-lg p-6 flex flex-col bullet-animation"
+                style="animation-delay: 0.6s"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-green-600"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-1a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v1h-3zM4.75 12.094A5.973 5.973 0 004 15v1H1v-1a3 3 0 013.75-2.906z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-green-800">Kemasyarakatan</h3>
+                </div>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Kemitraan antara pemerintah dan masyarakat</li>
+                  <li>Kontrol sosial yang konstruktif</li>
+                  <li>Penegakan hukum yang adil</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="mt-6 bg-green-100 p-4 rounded-lg text-center text-green-800 bullet-animation"
+              style="animation-delay: 0.8s"
+            >
+              <p>
+                Implementasi nilai HAM dan demokrasi dalam Islam harus dilakukan
+                secara <span class="font-bold">bijaksana dan seimbang</span>,
+                tidak ekstrim ke kanan maupun ke kiri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 10: Penutup -->
+      <div class="slide p-8 absolute w-full h-full opacity-0" id="slide10">
+        <div
+          class="h-full flex flex-col items-center justify-center text-center"
+        >
+          <div class="bg-white rounded-xl p-10 max-w-2xl">
+            <div
+              class="islamic-pattern w-32 h-32 rounded-full mx-auto mb-6"
+            ></div>
+            <h2 class="slide-title text-4xl font-bold mb-6">Kesimpulan</h2>
+            <div class="space-y-4 text-gray-700 mb-8">
+              <p>
+                Islam memiliki konsep HAM dan demokrasi yang komprehensif dengan
+                landasan Al-Qur'an dan Sunnah.
+              </p>
+              <p>
+                Implementasi HAM dan demokrasi dalam Islam harus
+                mempertimbangkan maqasid syariah dan kemaslahatan umum.
+              </p>
+              <p>
+                Negara-negara muslim perlu terus memperbaiki praktik HAM dan
+                demokrasi sesuai prinsip Islam yang moderat.
+              </p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-blue-800 mb-2">Rekomendasi</h3>
+              <p class="text-gray-700">
+                Pendekatan wasathiyah (moderat) dalam memahami dan
+                mengimplementasikan HAM dan demokrasi sesuai nilai-nilai Islam.
+              </p>
+            </div>
+            <div class="mt-8 text-sm text-gray-500">
+              <p>Terima kasih atas perhatiannya</p>
+              <p class="mt-2">Presentasi ini dapat didiskusikan lebih lanjut</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="flex justify-center mt-6 space-x-4">
+      <button
+        onclick="prevSlide()"
+        class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+      >
+        Sebelumnya
+      </button>
+      <span id="slide-number" class="px-4 py-2 font-medium">1/10</span>
+      <button
+        onclick="nextSlide()"
+        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+      >
+        Berikutnya
+      </button>
+    </div>
+
+    <script>
+      let currentSlide = 1;
+      const totalSlides = 10;
+
+      function updateSlide() {
+        // Hide all slides
+        document.querySelectorAll(".slide").forEach((slide) => {
+          slide.classList.remove("current-slide");
+          slide.classList.add("opacity-0");
+        });
+
+        // Show current slide
+        const current = document.getElementById(`slide${currentSlide}`);
+        current.classList.add("current-slide");
+        current.classList.remove("opacity-0");
+
+        // Update slide number
+        document.getElementById(
+          "slide-number"
+        ).textContent = `${currentSlide}/${totalSlides}`;
+
+        // Reset animations for the current slide
+        setTimeout(() => {
+          const animatedElements = current.querySelectorAll(
+            ".fade-in, .bullet-animation"
+          );
+          animatedElements.forEach((el, index) => {
+            el.style.animationName = "none";
+            void el.offsetWidth; // Trigger reflow
+            el.style.animationName = "";
+            el.style.animationDelay = `${index * 0.2 + 0.2}s`;
+          });
+        }, 50);
+      }
+
+      function nextSlide() {
+        if (currentSlide < totalSlides) {
+          currentSlide++;
+          updateSlide();
+        }
+      }
+
+      function prevSlide() {
+        if (currentSlide > 1) {
+          currentSlide--;
+          updateSlide();
+        }
+      }
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") {
+          nextSlide();
+        } else if (e.key === "ArrowLeft") {
+          prevSlide();
+        }
+      });
+
+      // Initialize
+      updateSlide();
+    </script>
+  </body>
+</html>
